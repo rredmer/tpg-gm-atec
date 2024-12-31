@@ -1,0 +1,189 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD130ACD-FCA8-4F2C-9185-4C1774A04169}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AtecMain</RootNamespace>
+    <AssemblyName>AtecMain</AssemblyName>
+    <StartupObject>AtecMain.Program</StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ManifestCertificateThumbprint>FB84D901317E4BFCF58C6DC70C7A35D1608B919F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>AtecMain_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>C:\Documents and Settings\dlgrismore\My Documents\Visual Studio 2005\Projects\AtecMain\ATEC EPROM Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtecMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtecMainForm.Designer.cs">
+      <DependentUpon>AtecMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChecksumForm.Designer.cs">
+      <DependentUpon>ChecksumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterDataFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterDataFileForm.Designer.cs">
+      <DependentUpon>EnterDataFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterExorciserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterExorciserForm.Designer.cs">
+      <DependentUpon>EnterExorciserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterPartNumFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterPartNumFileForm.Designer.cs">
+      <DependentUpon>EnterPartNumFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartNumberForm.Designer.cs">
+      <DependentUpon>PartNumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramEpromForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramEpromForm.Designer.cs">
+      <DependentUpon>ProgramEpromForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AtecMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AtecMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChecksumForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChecksumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterDataFileForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnterDataFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterExorciserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnterExorciserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterPartNumFileForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnterPartNumFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartNumberForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PartNumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramEpromForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgramEpromForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\SharedLib\SharedLib.csproj">
+      <Project>{C0CC5E63-39A5-4A24-B509-B483563C4427}</Project>
+      <Name>SharedLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

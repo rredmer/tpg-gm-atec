@@ -8,13 +8,29 @@ Technical Products Group - General Motors Production ATEC EPROM Programmer
 ## Description
 The **ATEC EPROM Programmer** is a software application designed to program EPROM modules in a high-volume manufacturing environment using the DataIO 3980 series of EPROM programmers. It features a user-friendly interface and supports diagnostics and troubleshooting for EPROM programmers and thermal label printers. The user manual is located in the "Docs" folder and provides comprehensive instructions for installing, configuring, and using the ATEC EPROM Programmer, along with troubleshooting and technical reference information. If you have any specific questions or need further details, feel free to ask!
 
+## Technology Stack
+The technology stack is simply a standard Microsoft Visual Studio C# Windows Forms Application using native .NET Controls.
+
+- [x] Microsoft Visual Studio
+    - [x] WinForms, C#
+    - [x] Native Controls
+    - [x] Intel <-> Motorola Firmware Conversion Routines
+    - [x] Diagnostic logging to text files
+    - [x] Comprehensive UI event logging
+- [x] Intermec Thermal Label Printer
+    - [x] RS-232 Serial Communications
+    - [x] Barcoded Serial Numbers
+- [x] DataIO EPROM Programmer
+    - [x] RS-232 Serial Communications
+    - [x] Protocol Checksum Packet Validation
+
 ### Key Features
 - **Main Menu Interface**: Easy to use, no mouse required.
 - **Status Display**: Shows the status of EPROM programmers and printers.
 - **Event History**: Logs every action taken.
 - **Diagnostics**: Complete diagnostics for EPROM programmers and printers.
 - **Troubleshooting Log**: Helps in identifying and resolving issues.
-- **Compatibility**: Supports Microsoft Windows XP and Vista.
+- **Compatibility**: Supports Microsoft Windows XP and later Operating Systems.
 
 ### User Interface
 - **Windows Menu**: Provides file and view options.

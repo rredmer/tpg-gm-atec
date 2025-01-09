@@ -1,5 +1,5 @@
-<a href="https://developer.microsoft.com">![Microsoft](https://img.shields.io/badge/Microsoft-666666?style=for-the-badge&logo=microsoft&logoColor=white)</a>
-<a href="https://visualstudio.microsoft.com">![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)</a>
+<a href="https://developer.microsoft.com" target="_blank">![Microsoft](https://img.shields.io/badge/Microsoft-666666?style=for-the-badge&logo=microsoft&logoColor=white)</a>
+<a href="https://visualstudio.microsoft.com" target="_blank">![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)</a>
 
 # GM ATEC EPROM PROGRAMMER
 
